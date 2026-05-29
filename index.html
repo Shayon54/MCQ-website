@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Quiz — Class Notes</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animated Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast"></div>
+
+    <div class="page">
+        <nav>
+            <div class="nav-brand">📚 History<span>Quiz</span></div>
+            <div class="breadcrumb" id="breadcrumb"></div>
+        </nav>
+
+
+        <!-- SCREEN 1: Chapters -->
+        <section id="screen-home">
+            <div class="screen-title">Choose a chapter</div>
+            <div class="screen-sub">Select any chapter to begin practising</div>
+            <div class="chapter-grid" id="chapter-grid"></div>
+        </section>
+
+        <!-- SCREEN 2: Topics (Updated) -->
+<section id="screen-topics" style="display:none">
+    <button class="back-btn" onclick="goHome()">← Back to chapters</button>
+    <div class="screen-title" id="chapter-title-display"></div>
+    <div class="screen-sub" id="chapter-sub-display"></div>
+    <div class="topic-grid" id="topic-grid"></div>
+    
+    <div class="select-actions">
+        <!-- New Select All Button -->
+        <button class="select-all-btn" id="sel-all-btn" onclick="toggleSelectAll()">Select all topics</button>
+        <span class="sel-count" id="sel-count">0 topics selected</span>
+        <button class="start-btn" id="start-btn" disabled onclick="startQuiz()">Start Quiz →</button>
+    </div>
+</section>
+
+        <!-- SCREEN 3: Quiz -->
+        <section id="screen-quiz" style="display:none">
+            <div class="glass-card">
+                <div class="progress-wrap">
+                    <div class="progress-fill" id="prog"></div>
+                </div>
+                <div class="stats-row">
+                    <div class="s-card">
+                        <div class="s-label">Question</div>
+                        <div class="s-val" id="sq-num">0/0</div>
+                    </div>
+                    <div class="s-card">
+                <div class="s-label">Time</div>
+                <div class="s-val" id="sq-timer">00:00</div>
+                </div>
+                    <div class="s-card">
+                        <div class="s-label">Score</div>
+                        <div class="s-val" id="sq-score">0</div>
+                    </div>
+                    <div class="s-card">
+                        <div class="s-label">Streak 🔥</div>
+                        <div class="s-val" id="sq-streak">0</div>
+                    </div>
+                    <div class="s-card">
+                        <div class="s-label">Accuracy</div>
+                        <div class="s-val" id="sq-acc">—</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="q-topic-badge" id="qtopic"></div>
+                <div class="q-num" id="qnum"></div>
+                <div class="q-text" id="qtext"></div>
+                <div class="opts-grid" id="opts"></div>
+                <div class="quiz-actions">
+                    <div class="feed" id="feed"></div>
+                    <button class="next-btn" id="next-btn" disabled onclick="nextQ()">Next →</button>
+                </div>
+            </div>
+        </section>
+
+       <!-- SCREEN 4: Results (Updated) -->
+<!-- SCREEN 4: Results (Updated with Gradient Support) -->
+<section id="screen-result" style="display:none">
+    <div class="glass-card" style="text-align:center">
+        <div class="ring-wrap">
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <!-- IMPORTANT: The Gradient definition must be inside the SVG -->
+                <defs>
+                    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1D9E75" /> 
+                        <stop offset="50%" style="stop-color:#7F77DD" /> 
+                        <stop offset="100%" style="stop-color:#378ADD" /> 
+                    </linearGradient>
+                </defs>
+                <circle class="ring-bg" cx="75" cy="75" r="65"/>
+                <!-- Ensure this ID matches your JS and CSS -->
+                <circle id="ring-fill" cx="75" cy="75" r="65"/>
+            </svg>
+            <div id="score-big">0</div>
+        </div>
+        <div class="screen-title" id="res-label" style="font-size:20px; justify-content: center;"></div>
+        <div id="res-grade-pill" class="grade-pill"></div>
+        
+        <div class="result-actions" style="display:flex; gap:10px; justify-content:center; margin-top:20px">
+            <button class="start-btn" onclick="restartSameTopics()">🔄 Retry</button>
+            <button class="start-btn secondary-btn" onclick="goHome()">🏠 Home</button>
+        </div>
+    </div>
+
+    <!-- Mistakes Review Section -->
+    <div id="review-container" class="glass-card" style="margin-top:20px; display:none;">
+        <h3 style="margin-bottom:15px; color:var(--purple-light)">Mistakes Review</h3>
+        <div id="review-list"></div>
+    </div>
+</section>
+    </div>
+
+    <!-- Your Javascript (Internal or external) -->
+    <script src="script.js"></script>
+</body>
+</html>

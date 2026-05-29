@@ -1,0 +1,418 @@
+/* 1. VARIABLES & RESET */
+:root {
+  --bg: #0e0c1a;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface2: rgba(255, 255, 255, 0.09);
+  --border: rgba(255, 255, 255, 0.12);
+  --border2: rgba(255, 255, 255, 0.22);
+  --text: #f0eeff;
+  --muted: rgba(240, 238, 255, 0.55);
+  --hint: rgba(240, 238, 255, 0.35);
+  --purple: #7F77DD;
+  --purple-dark: #534AB7;
+  --purple-light: #AFA9EC;
+  --green: #639922;
+  --green-light: #97C459;
+  --red: #E24B4A;
+  --red-light: #F09595;
+  --teal: #1D9E75;
+  --amber: #EF9F27;
+  --radius: 14px;
+  --radius-sm: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* 2. ANIMATED BACKGROUND */
+.bg-blobs {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: .18;
+}
+
+.blob1 { width: 600px; height: 600px; background: var(--purple); top: -150px; left: -150px; animation: b1 12s ease-in-out infinite; }
+.blob2 { width: 450px; height: 450px; background: var(--teal); bottom: -100px; right: -100px; animation: b2 15s ease-in-out infinite; }
+.blob3 { width: 300px; height: 300px; background: var(--amber); top: 40%; left: 60%; animation: b3 10s ease-in-out infinite; }
+
+@keyframes b1 { 0%, 100% { transform: translate(0,0); } 50% { transform: translate(50px, 40px); } }
+@keyframes b2 { 0%, 100% { transform: translate(0,0); } 50% { transform: translate(-40px, -50px); } }
+@keyframes b3 { 0%, 100% { transform: translate(0,0); } 50% { transform: translate(-30px, 30px); } }
+
+/* 3. LAYOUT & NAVIGATION */
+.page {
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 28px 20px 80px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.nav-brand { 
+  font-size: 24px; /* Increased from 20px */
+  font-weight: 700; 
+  color: var(--text); 
+  letter-spacing: -0.5px; 
+}
+.nav-brand span { color: var(--purple-light); }
+
+.breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.breadcrumb .crumb { cursor: pointer; transition: color .15s; }
+.breadcrumb .crumb:hover { color: var(--purple-light); }
+.breadcrumb .crumb.active { color: var(--text); cursor: default; }
+
+.back-btn { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--muted); cursor: pointer; margin-bottom: 24px; transition: color .15s; background: none; border: none; padding: 0; }
+.back-btn:hover { color: var(--purple-light); }
+
+/* 4. CARDS & GRIDS - Updated for image_5498b9.jpg styling */
+
+/* Big Chapter Title Header */
+.screen-title {
+  font-size: 26px; 
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.screen-sub {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 40px; /* Increased from 28px for better breathing room */
+}
+
+/* Grid layout for Chapters and Topics */
+.chapter-grid, .topic-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  gap: 20px; 
+}
+
+/* Base Card Styling */
+.chapter-card, .topic-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 140px; /* Reduced height to make boxes smaller */
+}
+
+/* Interactive States */
+.chapter-card:hover, .topic-card:hover { 
+  background: var(--surface2); 
+  border-color: var(--border2); 
+  transform: translateY(-2px); 
+}
+
+.topic-card.selected { 
+  border-color: var(--purple); 
+  background: rgba(127, 119, 221, 0.15); 
+}
+
+/* Styled Container for Chapter Icons (Screen 1) */
+.chapter-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Typography for Topic Names (Screen 2) */
+.topic-name {
+  font-size: 18px; 
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+/* Typography for Question Counts */
+.topic-count, .chapter-meta {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Top-Right Arrow for Chapter Cards */
+.chapter-arrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 18px;
+  color: var(--hint);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.chapter-card:hover .chapter-arrow {
+  transform: translateX(4px);
+  color: var(--purple-light);
+}
+
+/* Glassmorphism Container for Stats & Results */
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 16px;
+}
+
+/* Removed the dot indicator to match the clean look in image_5498b9.jpg */
+.topic-dot {
+  display: none;
+}
+
+/* 5. QUIZ COMPONENTS & PROGRESS RING */
+
+/* Container for the ring and centered score */
+.ring-wrap {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 24px; /* Centered with bottom spacing */
+}
+
+/* Rotate SVG so progress starts at the top (12 o'clock) */
+.ring-wrap svg {
+  transform: rotate(-90deg);
+}
+
+/* The background (muted) circle - ensures no "black box" fill */
+.ring-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 12;
+}
+
+/* The actual animated progress circle */
+#ring-fill {
+  fill: none;
+  stroke: url(#ringGrad); /* Uses the gradient defined in your HTML */
+  stroke-width: 12;
+  stroke-linecap: round;
+  /* Circumference for r=65 is ~408.3 */
+  stroke-dasharray: 408;
+  stroke-dashoffset: 408; 
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Score number placed exactly in the center of the ring */
+#score-big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(127, 119, 221, 0.4);
+}
+
+/* Grade Pill styling from the second image */
+.grade-pill {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.grade-A { background: rgba(99, 153, 34, 0.2); color: var(--green-light); border-color: var(--green); }
+.grade-B { background: rgba(127, 119, 221, 0.2); color: var(--purple-light); border-color: var(--purple); }
+.grade-D { background: rgba(239, 159, 39, 0.2); color: var(--amber); border-color: var(--amber); }
+
+/* Horizontal Progress Bar */
+.progress-wrap { height: 8px; background: rgba(255, 255, 255, 0.1); border-radius: 6px; overflow: hidden; margin-bottom: 20px; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--purple), var(--teal)); transition: width .5s cubic-bezier(.4,0,.2,1); }
+
+/* Statistics Dashboard */
+.stats-row { 
+  display: grid; 
+  /* auto-fit makes the 5 cards wrap naturally as the screen gets smaller */
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
+  gap: 12px; 
+  margin-bottom: 20px; 
+}
+
+.s-card { 
+  background: rgba(255, 255, 255, 0.08); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 12px; 
+  padding: 12px 8px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70px;
+}
+
+.s-label { 
+  font-size: 10px; 
+  color: var(--muted); 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+  margin-bottom: 4px; 
+}
+
+.s-val { 
+  font-size: 18px; 
+  font-weight: 700; 
+  color: #fff; 
+}
+
+
+/* Option Buttons Grid */
+.opts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+.opt-btn {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 14px;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  transition: all .18s;
+  text-align: left;
+}
+
+.opt-btn:hover { background: rgba(255, 255, 255, 0.12); border-color: var(--border2); }
+.opt-btn.correct { background: rgba(99, 153, 34, 0.25); border-color: var(--green); }
+.opt-btn.wrong { background: rgba(226, 75, 74, 0.22); border-color: var(--red); }
+.opt-btn.reveal { background: rgba(99, 153, 34, 0.15); border-color: var(--green); animation: pulseGreen 0.5s ease; }
+
+@keyframes pulseGreen { 0%{box-shadow:0 0 0 0 rgba(99,153,34,0.4)} 70%{box-shadow:0 0 0 10px rgba(99,153,34,0)} 100%{box-shadow:none} }
+/* 6. BUTTONS & ACTIONS */
+.select-actions { display: flex; align-items: center; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+.select-all-btn { background: none; border: none; color: var(--purple-light); cursor: pointer; text-decoration: underline; font-size: 14px; }
+.select-all-btn:hover { color: var(--text); }
+
+.start-btn, .next-btn {
+  background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(127, 119, 221, 0.3);
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.start-btn:hover, .next-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.start-btn:disabled, .next-btn:disabled { opacity: 0.35; cursor: default; transform: none; }
+.secondary-btn { background: var(--surface2); box-shadow: none; border: 1px solid var(--border); }
+
+/* 7. MISTAKES REVIEW */
+#review-list { display: flex; flex-direction: column; gap: 12px; margin-top: 15px; }
+
+.review-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+    border-left: 4px solid var(--red);
+    text-align: left;
+}
+
+.review-q { font-weight: 600; margin-bottom: 8px; font-size: 15px; color: var(--text); }
+.review-ans { font-size: 14px; color: var(--muted); }
+.review-ans i { color: var(--red-light); text-decoration: line-through; font-style: normal; margin-right: 10px; }
+.review-ans b { color: var(--green-light); font-weight: 600; }
+
+/* 8. TOAST & RESPONSIVE */
+/* 8. TOAST & RESPONSIVE - Optimized for 5-card stats */
+.toast { 
+  position: fixed; 
+  top: 16px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background: linear-gradient(135deg, var(--purple), var(--teal)); 
+  color: #fff; 
+  padding: 10px 24px; 
+  border-radius: 999px; 
+  font-size: 14px; 
+  font-weight: 600; 
+  opacity: 0; 
+  transition: opacity .3s; 
+  z-index: 9999; 
+}
+
+/* Main Mobile Breakpoint */
+@media (max-width: 600px) {
+  /* Stack chapter and topic cards into one column for better readability */
+  .chapter-grid, .topic-grid { 
+    grid-template-columns: 1fr; 
+  }
+
+  /* Quiz options become one per row to prevent text overlap */
+  .opts-grid { 
+    grid-template-columns: 1fr; 
+  }
+
+  /* Quiz stats row: Becomes a 2-column grid. 
+     With 5 cards, this creates two rows of 2 and one centered card at the bottom. */
+  .stats-row { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px;
+  }
+}
+
+/* Extra Small Devices (e.g., Small Androids) */
+@media (max-width: 380px) {
+  .s-val { 
+    font-size: 16px; 
+  }
+  .s-card {
+    padding: 8px 4px;
+    min-height: 60px;
+  }
+  .nav-brand {
+    font-size: 20px;
+  }
+}
+
