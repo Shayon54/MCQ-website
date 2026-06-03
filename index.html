@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History Quiz — Class Notes</title>
+    <title>Quiz — Class Notes</title>
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,14 +19,22 @@
     <div class="toast" id="toast"></div>
 
     <div class="page">
-        <nav>
-            <div class="nav-brand">📚 History<span>Quiz</span></div>
-            <div class="breadcrumb" id="breadcrumb"></div>
-        </nav>
+      <nav>
+    <div class="nav-brand" id="nav-title">📚 Study<span>Quiz</span></div>
+    <div class="breadcrumb" id="breadcrumb"></div>
+      </nav>
 
 
         <!-- SCREEN 1: Chapters -->
-        <section id="screen-home">
+
+       <section id="screen-subjects">
+            <div class="screen-title">Choose a Subject</div>
+            <div class="screen-sub">Select a subject to view its chapters</div>
+            <div class="chapter-grid" id="subject-grid"></div>
+        </section>
+
+        <section id="screen-home" style="display:none">
+            <button class="back-btn" onclick="goBackToSubjects()">← Back to subjects</button>
             <div class="screen-title">Choose a chapter</div>
             <div class="screen-sub">Select any chapter to begin practising</div>
             <div class="chapter-grid" id="chapter-grid"></div>

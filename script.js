@@ -1,15 +1,18 @@
-
-
-/* DATA (Your Chapters with questions) */
-const CHAPTERS = [
-  {
-    id: "ivc",
-    name: "Indus Valley Civilization",
-    icon: "🏛️",
+/* DATA (Grouped by Subject) */
+const SUBJECTS = {
+  history: {
+    name: "History",
+    icon: "📜",
     color: "#7F77DD",
-    desc: "Harappa, Mohenjo-daro, and Urban Planning",
-    questions: [
-      {q:"Who first discovered Harappa?", options:["R.D Banerjee","Dayaram Sahni","John Marshall","Alexander Cunningham"], answer:1, topic:"IVC"},
+    // Your massive original array moves right inside here!
+    chapters: [
+      {
+        id: "ivc",
+        name: "Indus Valley Civilization",
+        icon: "🏛️",
+        color: "#7F77DD",
+        desc: "Harappa, Mohenjo-daro, and Urban Planning",
+        questions: [ {q:"Who first discovered Harappa?", options:["R.D Banerjee","Dayaram Sahni","John Marshall","Alexander Cunningham"], answer:1, topic:"IVC"},
   {q:"Who discovered Mohenjo-daro?", options:["Dayaram Sahni","John Marshall","R.D Banerjee","Charles Mason"], answer:2, topic:"IVC"},
   {q:"Who is known as the Father of Indus Valley Civilization?", options:["John Marshall","Alexander Cunningham","Dayaram Sahni","R.D Banerjee"], answer:0, topic:"IVC"},
   {q:"IVC belongs to which period?", options:["Prehistory","Protohistory","Historic","Modern"], answer:1, topic:"IVC"},
@@ -109,9 +112,9 @@ const CHAPTERS = [
   {q:"Which animal bones found at Kalibangan?", options:["Horse","Camel","Elephant","Tiger"], answer:1, topic:"IVC"},
   {q:"Which material was NOT used by IVC people?", options:["Copper","Bronze","Iron","Gold"], answer:2, topic:"IVC"},
   {q:"Which site shows evidence of double burial?", options:["Harappa","Lothal","Kalibangan","Dholavira"], answer:1, topic:"IVC"}
-    ]
-  },
-  {
+        ]
+      },
+     {
     id: "vedic",
     name: "Vedic Age",
     icon: "📖",
@@ -258,7 +261,8 @@ const CHAPTERS = [
 
     ]
   },
-  {
+      // ... Keep all your other history chapters exactly as they were ...
+      {
     id: "mahajanapada",
     name: "Mahajanapadas & Magadha",
     icon: "⚔️",
@@ -1187,7 +1191,28 @@ questions: [
 {q:"Who established Diwan-i-Bandagan?",options:["Balban","Firoz Shah","Muhammad Bin Tughlaq","Aibak"],answer:1},
 {q:"Who established Dar-ul-Shafa?",options:["Balban","Alauddin","Firoz Shah","Iltutmish"],answer:2}
 
-]}];
+]}
+    ]
+  },
+  geography: {
+    name: "Geography",
+    icon: "🌍",
+    color: "#1D9E75",
+    chapters: [] // Empty for now, ready for later!
+  },
+  english: {
+    name: "English",
+    icon: "✍️",
+    color: "#EF9F27",
+    chapters: [] // Empty for now, ready for later!
+  }
+}; // <-- Make sure to close the object brace here!
+
+/* DATA (Your Chapters with questions) */
+
+  
+ 
+let activeSubject = null;
 let activeChapter = null;
 let selectedTopics = new Set();
 let quizQuestions = [];
@@ -1199,16 +1224,39 @@ let mistakeTracker = [];
    2. NAVIGATION & BREADCRUMBS
 ══════════════════════════════════════════ */
 function show(id) {
-    ["home", "topics", "quiz", "result"].forEach(s => {
+    // Added "subjects" to the screen array loop
+    ["subjects", "home", "topics", "quiz", "result"].forEach(s => {
         const el = document.getElementById("screen-" + s);
         if (el) el.style.display = s === id ? "block" : "none";
     });
 }
 
-function goHome() {
+function goBackToSubjects() {
+    activeSubject = null;
     activeChapter = null;
-    show("home");
+    
+    // Reset navbar brand title back to default if you modified it
+    const navTitle = document.getElementById("nav-title");
+    if (navTitle) navTitle.innerHTML = `📚 Study<span>Quiz</span>`;
+    
+    renderSubjects();
+    show("subjects");
     setBreadcrumb([{ label: "Home", active: true }]);
+}
+
+function goHome() {
+    // If a subject context exists, home button drops you back to its chapter list
+    if (activeSubject) {
+        activeChapter = null;
+        renderChapters();
+        show("home");
+        setBreadcrumb([
+            { label: "Home", fn: "goBackToSubjects" }, 
+            { label: SUBJECTS[activeSubject].name, active: true }
+        ]);
+    } else {
+        goBackToSubjects();
+    }
 }
 
 function setBreadcrumb(items) {
@@ -1219,6 +1267,44 @@ function setBreadcrumb(items) {
     ).join("");
 }
 
+//new section
+function renderSubjects() {
+    const grid = document.getElementById("subject-grid");
+    if (!grid) return;
+    grid.innerHTML = "";
+    
+    Object.keys(SUBJECTS).forEach(key => {
+        const sub = SUBJECTS[key];
+        const card = document.createElement("div");
+        card.className = "chapter-card"; // Reuse styles perfectly
+        card.innerHTML = `
+            <div class="chapter-icon" style="background:${sub.color}22; color:${sub.color}">
+                ${sub.icon}
+            </div>
+            <div class="chapter-name">${sub.name}</div>
+            <div class="chapter-meta">${sub.chapters.length} Chapters available</div>
+            <span class="chapter-arrow">→</span>
+        `;
+        card.onclick = () => selectSubject(key);
+        grid.appendChild(card);
+    });
+}
+
+function selectSubject(subjectKey) {
+    activeSubject = subjectKey;
+    const sub = SUBJECTS[subjectKey];
+    
+    // Optional: Update navbar brand title to match the subject context
+    const navTitle = document.getElementById("nav-title");
+    if (navTitle) navTitle.innerHTML = `${sub.icon} ${sub.name}<span>Quiz</span>`;
+    
+    renderChapters();
+    show("home");
+    setBreadcrumb([
+        { label: "Home", fn: "goBackToSubjects" }, 
+        { label: sub.name, active: true }
+    ]);
+}
 /* ══════════════════════════════════════════
    3. CHAPTER & TOPIC RENDERING
 ══════════════════════════════════════════ */
@@ -1226,10 +1312,18 @@ function renderChapters() {
     const grid = document.getElementById("chapter-grid");
     if (!grid) return;
     grid.innerHTML = "";
-    CHAPTERS.forEach(ch => {
+    
+    // Read directly from the currently active subject's database
+    const currentChapters = SUBJECTS[activeSubject].chapters;
+    
+    if (currentChapters.length === 0) {
+        grid.innerHTML = `<div class="screen-sub" style="grid-column: 1/-1;">No chapters uploaded for this subject yet!</div>`;
+        return;
+    }
+
+    currentChapters.forEach(ch => {
         const card = document.createElement("div");
         card.className = "chapter-card";
-        // Updated structure to support top-right arrow and boxed icon
         card.innerHTML = `
             <div class="chapter-icon" style="background:${ch.color}22; color:${ch.color}">
                 ${ch.icon}
@@ -1435,39 +1529,7 @@ function nextQ() {
     if (cQ < quizQuestions.length) loadQ(); else showResults();
 }
 
-function showResults() {
-    show("result");
-    const pct = Math.round((score / quizQuestions.length) * 100);
-    document.getElementById("score-big").textContent = score;
-    document.getElementById("res-label").textContent = `You scored ${score} / ${quizQuestions.length} (${pct}%)`;
 
-    const pill = document.getElementById("res-grade-pill");
-    if (pct >= 80) { pill.textContent = "🏆 Excellent!"; pill.className = "grade-pill grade-A"; }
-    else if (pct >= 50) { pill.textContent = "👍 Good Job!"; pill.className = "grade-pill grade-B"; }
-    else { pill.textContent = "📖 Keep Practicing!"; pill.className = "grade-pill grade-D"; }
-
-    // Render Mistakes
-    const reviewContainer = document.getElementById("review-container");
-    const reviewList = document.getElementById("review-list");
-    if (mistakeTracker.length > 0) {
-        reviewContainer.style.display = "block";
-        reviewList.innerHTML = mistakeTracker.map(m => `
-            <div class="review-item">
-                <div class="review-q">${m.question}</div>
-                <div class="review-ans">
-                    <i>${m.yourAnswer}</i> Correct: <b>${m.correctAnswer}</b>
-                </div>
-            </div>
-        `).join('');
-    } else {
-        reviewContainer.style.display = "none";
-    }
-
-    setTimeout(() => {
-        const ring = document.getElementById("ring-fill");
-        if (ring) ring.style.strokeDashoffset = 408 - (408 * (pct / 100));
-    }, 200);
-}
 
 function restartSameTopics() { startQuiz(); }
 
@@ -1479,6 +1541,9 @@ function showToast(msg) {
 }
 
 function showResults() {
+    // CRITICAL FIX: Stop the active background timer interval immediately!
+    stopTimer(); 
+
     show("result");
     const pct = Math.round((score / quizQuestions.length) * 100);
     
@@ -1539,5 +1604,6 @@ function showResults() {
 /* ══════════════════════════════════════════
    5. INITIALIZE
 ══════════════════════════════════════════ */
-renderChapters();
-goHome();
+renderSubjects();
+show("subjects");
+setBreadcrumb([{ label: "Home", active: true }]);

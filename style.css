@@ -416,3 +416,23 @@ nav {
   }
 }
 
+/* ==========================================================================
+   9. SUBJECT EXTENSION ADDITIONS
+   ========================================================================== */
+   
+/* Styles the empty state message beautifully if a subject has no chapters yet */
+.chapter-grid > .screen-sub {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Ensure the top navbar brand changes colors smoothly when updated via JS */
+.nav-brand {
+  transition: color 0.2s ease;
+}
