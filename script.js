@@ -800,7 +800,394 @@ questions:[
 
 
 ]
-}];
+},
+{
+id:"medieval_india",
+name:"Medieval India",
+icon:"🕌",
+color:"#8E44AD",
+desc:"Islam, Arab Conquest of Sindh, Ghazni, Ghori & Delhi Sultanate",
+questions:[
+
+{q:"Islam originated in which century?", options:["5th","6th","7th","8th"], answer:2, topic:"Medieval India"},
+{q:"Birthplace of Islam?", options:["Baghdad","Mecca","Medina","Jerusalem"], answer:1, topic:"Medieval India"},
+{q:"Founder of Islam?", options:["Ali","Abu Bakr","Prophet Muhammad","Umar"], answer:2, topic:"Medieval India"},
+{q:"Holy city of Islam?", options:["Baghdad","Medina","Mecca","Damascus"], answer:2, topic:"Medieval India"},
+{q:"First Muslims came to India through?", options:["Delhi","Punjab","Malabar Coast","Sindh"], answer:2, topic:"Medieval India"},
+
+{q:"First Muslim attack on India took place in?", options:["711 AD","712 AD","1000 AD","1192 AD"], answer:0, topic:"Medieval India"},
+{q:"Who led the Arab invasion of Sindh?", options:["Mahmud Ghazni","Muhammad Ghori","Muhammad Bin Qasim","Qutbuddin Aibak"], answer:2, topic:"Medieval India"},
+{q:"King of Sindh during Arab invasion?", options:["Jaipal","Dahir","Prithviraj","Anangpal"], answer:1, topic:"Medieval India"},
+{q:"Battle between Dahir and Muhammad Bin Qasim?", options:["Tarain","Rawar","Panipat","Waihind"], answer:1, topic:"Medieval India"},
+{q:"Battle of Rawar fought in?", options:["711-712 AD","1000 AD","1025 AD","1192 AD"], answer:0, topic:"Medieval India"},
+
+{q:"Result of Battle of Rawar?", options:["Dahir won","Muhammad Bin Qasim won","Draw","Ghori won"], answer:1, topic:"Medieval India"},
+{q:"After Rawar, which region came under Muslim control?", options:["Punjab","Delhi","Sindh","Bengal"], answer:2, topic:"Medieval India"},
+{q:"Main source for Arab conquest of Sindh?", options:["Indica","Chachnama","Rajatarangini","Tarikh-i-Hind"], answer:1, topic:"Medieval India"},
+{q:"Author of Chachnama?", options:["Al-Biruni","Unknown","Utbi","Firdausi"], answer:1, topic:"Medieval India"},
+{q:"Persian translator of Chachnama?", options:["Utbi","Abu Bakr","Ali Kufi","Firdausi"], answer:2, topic:"Medieval India"},
+
+{q:"Muhammad Bin Qasim captured which port first?", options:["Surat","Debal","Goa","Cambay"], answer:1, topic:"Medieval India"},
+{q:"Governor of Iraq who supported invasion of Sindh?", options:["Harun","Al-Hajjaj","Abu Bakr","Ali"], answer:1, topic:"Medieval India"},
+{q:"Arab invasion came through?", options:["Arabian Sea","Bay of Bengal","Red Sea","Mediterranean"], answer:0, topic:"Medieval India"},
+{q:"King Dahir belonged to?", options:["Sindh","Delhi","Punjab","Gujarat"], answer:0, topic:"Medieval India"},
+{q:"Arab conquest established Muslim rule first in?", options:["Delhi","Punjab","Sindh","Bengal"], answer:2, topic:"Medieval India"},
+
+{q:"Founder of Ghazni dynasty?", options:["Mahmud","Alaptigin","Sabuktigin","Ghori"], answer:1, topic:"Medieval India"},
+{q:"Founder established Ghazni in?", options:["962 AD","1000 AD","998 AD","1025 AD"], answer:0, topic:"Medieval India"},
+{q:"Second ruler of Ghazni dynasty?", options:["Mahmud","Sabuktigin","Ghori","Aibak"], answer:1, topic:"Medieval India"},
+{q:"Sabuktigin fought against?", options:["Rajputs","Hindu Shahi rulers","Mughals","Marathas"], answer:1, topic:"Medieval India"},
+{q:"Capital of Hindu Shahi kingdom?", options:["Lahore","Delhi","Waihind","Ajmer"], answer:2, topic:"Medieval India"},
+
+{q:"Greatest ruler of Ghazni dynasty?", options:["Sabuktigin","Mahmud","Ghori","Aibak"], answer:1, topic:"Medieval India"},
+{q:"Period of Mahmud Ghazni?", options:["962-998","998-1030","1191-1206","1206-1210"], answer:1, topic:"Medieval India"},
+{q:"How many times did Mahmud attack India?", options:["12","15","17","20"], answer:2, topic:"Medieval India"},
+{q:"First Indian ruler defeated by Mahmud?", options:["Dahir","Jaipal","Prithviraj","Anangpal"], answer:1, topic:"Medieval India"},
+{q:"Battle of Waihind fought in?", options:["1000 AD","1001 AD","1025 AD","1192 AD"], answer:1, topic:"Medieval India"},
+
+{q:"Mahmud destroyed which famous temple?", options:["Kashi Vishwanath","Somnath","Konark","Khajuraho"], answer:1, topic:"Medieval India"},
+{q:"Somnath temple is in?", options:["Rajasthan","Punjab","Gujarat","UP"], answer:2, topic:"Medieval India"},
+{q:"Somnath attack took place in?", options:["1001","1018","1025","1027"], answer:2, topic:"Medieval India"},
+{q:"Ruler of Gujarat during Somnath attack?", options:["Bhima I","Dahir","Jaipal","Prithviraj"], answer:0, topic:"Medieval India"},
+{q:"Last attack of Mahmud was against?", options:["Rajputs","Jats","Cholas","Palas"], answer:1, topic:"Medieval India"},
+
+{q:"Last attack of Mahmud occurred in?", options:["1025","1027","1030","1192"], answer:1, topic:"Medieval India"},
+{q:"Court poet of Mahmud?", options:["Utbi","Firdausi","Al-Biruni","Hasan"], answer:1, topic:"Medieval India"},
+{q:"Famous work of Firdausi?", options:["Shahnama","Tarikh-i-Hind","Chachnama","Indica"], answer:0, topic:"Medieval India"},
+{q:"Court historian of Mahmud?", options:["Firdausi","Utbi","Ghori","Aibak"], answer:1, topic:"Medieval India"},
+{q:"Utbi described Mahmud's battles as?", options:["Holy War","Trade War","Civil War","Rajput War"], answer:0, topic:"Medieval India"},
+
+{q:"Who came to India with Mahmud?", options:["Firdausi","Al-Biruni","Utbi","Ghori"], answer:1, topic:"Medieval India"},
+{q:"Real name of Al-Biruni?", options:["Abu Rayhan","Ali","Hasan","Utbi"], answer:0, topic:"Medieval India"},
+{q:"Title Al-Biruni means?", options:["Warrior","Knowledgeable Person","King","Poet"], answer:1, topic:"Medieval India"},
+{q:"Book written by Al-Biruni?", options:["Shahnama","Kitab-ul-Hind","Indica","Rajatarangini"], answer:1, topic:"Medieval India"},
+{q:"Al-Biruni studied mainly?", options:["China","India","Persia","Arabia"], answer:1, topic:"Medieval India"},
+
+{q:"Founder of Ghor Empire?", options:["Mahmud","Muhammad Ghori","Muhammad Ghori's family","Muhammad of Ghor"], answer:3, topic:"Medieval India"},
+{q:"Muhammad Ghori first attacked India in?", options:["1001","1025","1191","1175"], answer:3, topic:"Medieval India"},
+{q:"Who defeated Ghori in First Battle of Tarain?", options:["Jaipal","Prithviraj Chauhan","Dahir","Aibak"], answer:1, topic:"Medieval India"},
+{q:"First Battle of Tarain fought in?", options:["1191","1192","1206","1025"], answer:0, topic:"Medieval India"},
+{q:"Second Battle of Tarain fought in?", options:["1191","1192","1206","1001"], answer:1, topic:"Medieval India"},
+
+{q:"Who won Second Battle of Tarain?", options:["Prithviraj","Ghori","Jaichand","Aibak"], answer:1, topic:"Medieval India"},
+{q:"Victory in Second Tarain opened way for?", options:["Mughal Empire","Delhi Sultanate","Maratha Empire","Gupta Empire"], answer:1, topic:"Medieval India"},
+{q:"Prithviraj Chauhan belonged to?", options:["Rajput dynasty","Maurya","Gupta","Chola"], answer:0, topic:"Medieval India"},
+{q:"Source for Prithviraj Chauhan?", options:["Indica","Prithviraj Raso","Kitab-ul-Hind","Shahnama"], answer:1, topic:"Medieval India"},
+{q:"Author of Prithviraj Raso?", options:["Firdausi","Chand Bardai","Utbi","Kalhana"], answer:1, topic:"Medieval India"},
+
+{q:"Muhammad Ghori had how many famous slaves?", options:["2","3","4","5"], answer:2, topic:"Medieval India"},
+{q:"Most famous slave of Ghori?", options:["Yildiz","Qubacha","Bakhtiyar Khilji","Qutbuddin Aibak"], answer:3, topic:"Medieval India"},
+{q:"Qutbuddin Aibak was appointed as?", options:["King","Governor","Poet","Historian"], answer:1, topic:"Medieval India"},
+{q:"Delhi Sultanate was established in?", options:["1192","1206","1290","1320"], answer:1, topic:"Medieval India"},
+{q:"Founder of Delhi Sultanate?", options:["Aibak","Ghori","Balban","Iltutmish"], answer:0, topic:"Medieval India"},
+
+{q:"Aibak founded which dynasty?", options:["Khilji","Slave Dynasty","Tughlaq","Lodi"], answer:1, topic:"Medieval India"},
+{q:"Meaning of Aibak?", options:["Warrior","Moon Lord","Slave","Commander"], answer:1, topic:"Medieval India"},
+{q:"Bakhtiyar Khilji conquered?", options:["Punjab","Bihar & Bengal","Sindh","Gujarat"], answer:1, topic:"Medieval India"},
+{q:"Nasiruddin Qubacha ruled?", options:["Sindh","Delhi","Ajmer","Bengal"], answer:0, topic:"Medieval India"},
+{q:"Tajuddin Yildiz controlled?", options:["Ghazni","Delhi","Ajmer","Multan"], answer:0, topic:"Medieval India"},
+
+{q:"First successful Muslim invasion of India was by?", options:["Mahmud","Ghori","Muhammad Bin Qasim","Aibak"], answer:2, topic:"Medieval India"},
+{q:"Arab conquest mainly affected?", options:["South India","Sindh","Bengal","Delhi"], answer:1, topic:"Medieval India"},
+{q:"Which sea route connected Arabs to India?", options:["Arabian Sea","Mediterranean","Pacific","Atlantic"], answer:0, topic:"Medieval India"},
+{q:"King of Ceylon exchanged gifts with?", options:["Dahir","Caliph","Ghori","Mahmud"], answer:1, topic:"Medieval India"},
+{q:"Present day Ceylon is?", options:["Maldives","Sri Lanka","Nepal","Bhutan"], answer:1, topic:"Medieval India"},
+
+// 35 more MCQs
+
+{q:"Capital of Ghazni Empire?", options:["Delhi","Kabul","Ghazni","Lahore"], answer:2, topic:"Medieval India"},
+{q:"Mahmud's empire was centered in?", options:["India","Afghanistan","Iran","Iraq"], answer:1, topic:"Medieval India"},
+{q:"Tarain is located in present-day?", options:["Haryana","Punjab","UP","Rajasthan"], answer:0, topic:"Medieval India"},
+{q:"Prithviraj Chauhan ruled from?", options:["Delhi-Ajmer","Kannauj","Gujarat","Lahore"], answer:0, topic:"Medieval India"},
+{q:"Jaichand belonged to?", options:["Gahadavala dynasty","Chola","Chalukya","Paramara"], answer:0, topic:"Medieval India"},
+
+{q:"Who helped Ghori against Prithviraj?", options:["Jaichand","Dahir","Bhima","Jaipal"], answer:0, topic:"Medieval India"},
+{q:"Muhammad Ghori died in?", options:["1206","1192","1027","1211"], answer:0, topic:"Medieval India"},
+{q:"Qutbuddin Aibak became Sultan after death of?", options:["Mahmud","Ghori","Balban","Iltutmish"], answer:1, topic:"Medieval India"},
+{q:"Slave Dynasty is also called?", options:["Mamluk Dynasty","Khilji","Tughlaq","Lodi"], answer:0, topic:"Medieval India"},
+{q:"Delhi Sultanate started in which century?", options:["10th","11th","12th","13th"], answer:3, topic:"Medieval India"},
+
+{q:"Kitab-ul-Hind deals with?", options:["India","Persia","Arabia","China"], answer:0, topic:"Medieval India"},
+{q:"Al-Biruni was expert in?", options:["Science","History","Mathematics","All"], answer:3, topic:"Medieval India"},
+{q:"Firdausi belonged to?", options:["India","Persia","China","Arabia"], answer:1, topic:"Medieval India"},
+{q:"Utbi wrote about?", options:["Ashoka","Mahmud","Ghori","Aibak"], answer:1, topic:"Medieval India"},
+{q:"Debal was a famous?", options:["Temple","Port","Capital","Fort"], answer:1, topic:"Medieval India"},
+
+{q:"Sindh conquest happened under which Caliphate?", options:["Abbasid","Umayyad","Ottoman","Fatimid"], answer:1, topic:"Medieval India"},
+{q:"Arab conquest brought which religion?", options:["Buddhism","Islam","Christianity","Jainism"], answer:1, topic:"Medieval India"},
+{q:"Who is considered first Turk ruler to attack India?", options:["Mahmud","Sabuktigin","Ghori","Aibak"], answer:1, topic:"Medieval India"},
+{q:"Mahmud attacked India mainly for?", options:["Trade","Religion and wealth","Agriculture","Colonies"], answer:1, topic:"Medieval India"},
+{q:"Number of years Mahmud attacked India?", options:["10","15","27","30"], answer:2, topic:"Medieval India"},
+
+{q:"Mahmud died in?", options:["1025","1027","1030","1192"], answer:2, topic:"Medieval India"},
+{q:"Prithviraj Chauhan belonged to which clan?", options:["Chauhan","Sisodia","Paramara","Tomara"], answer:0, topic:"Medieval India"},
+{q:"Aibak's rule began in?", options:["1206","1210","1192","1220"], answer:0, topic:"Medieval India"},
+{q:"Muhammad Bin Qasim belonged to?", options:["Arab","Turk","Persian","Afghan"], answer:0, topic:"Medieval India"},
+{q:"Rawar battle was fought in?", options:["Punjab","Sindh","Delhi","Gujarat"], answer:1, topic:"Medieval India"},
+
+{q:"Chachnama mainly describes?", options:["Mauryas","Arab conquest of Sindh","Guptas","Mughals"], answer:1, topic:"Medieval India"},
+{q:"Who captured Sindh?", options:["Ghori","Mahmud","Muhammad Bin Qasim","Aibak"], answer:2, topic:"Medieval India"},
+{q:"Which invasion marked permanent Muslim foothold?", options:["Mahmud","Ghori","Qasim","Aibak"], answer:2, topic:"Medieval India"},
+{q:"Delhi Sultanate's first ruler?", options:["Ghori","Aibak","Iltutmish","Balban"], answer:1, topic:"Medieval India"},
+{q:"Muhammad Ghori belonged to?", options:["Ghor","Ghazni","Delhi","Arabia"], answer:0, topic:"Medieval India"}
+]},
+{
+id:"delhi_sultanate",
+name:"Delhi Sultanate",
+icon:"🏰",
+color:"#C0392B",
+desc:"Slave, Khilji, Tughlaq, Sayyid & Lodhi Dynasties",
+questions: [
+
+{q:"Who founded the Delhi Sultanate?",options:["Iltutmish","Balban","Qutbuddin Aibak","Muhammad Ghori"],answer:2},
+{q:"Delhi Sultanate was founded in?",options:["1192","1206","1211","1290"],answer:1},
+{q:"Qutbuddin Aibak belonged to which dynasty?",options:["Khilji","Slave","Tughlaq","Lodhi"],answer:1},
+{q:"The Slave Dynasty is also known as?",options:["Sayyid","Mamluk","Lodhi","Tughlaq"],answer:1},
+{q:"Capital of Qutbuddin Aibak?",options:["Delhi","Agra","Lahore","Ajmer"],answer:2},
+{q:"Qutbuddin Aibak was known as?",options:["Iron Man","Lakh Baksh","Sultan-i-Azam","Sikander-i-Sani"],answer:1},
+{q:"Qutb Minar was started by?",options:["Iltutmish","Balban","Qutbuddin Aibak","Firoz Shah"],answer:2},
+{q:"Qutb Minar was completed by?",options:["Balban","Iltutmish","Razia","Alauddin"],answer:1},
+{q:"Qutb Minar was reconstructed by?",options:["Firoz Shah Tughlaq","Balban","Razia","Ghiyasuddin"],answer:0},
+{q:"Quwwat-ul-Islam Mosque is located at?",options:["Delhi","Agra","Ajmer","Lahore"],answer:0},
+
+{q:"Qutbuddin Aibak died while playing?",options:["Chess","Polo","Football","Hockey"],answer:1},
+{q:"Qutbuddin Aibak died in?",options:["1206","1210","1211","1229"],answer:1},
+{q:"Who succeeded Qutbuddin Aibak?",options:["Iltutmish","Aram Shah","Balban","Razia"],answer:1},
+{q:"Aram Shah ruled for approximately?",options:["8 months","8 years","2 years","5 years"],answer:0},
+{q:"Who became Sultan after Aram Shah?",options:["Balban","Razia","Iltutmish","Nasiruddin"],answer:2},
+
+{q:"Iltutmish ruled during?",options:["1206-1210","1211-1236","1236-1240","1266-1287"],answer:1},
+{q:"Iltutmish was originally a slave of?",options:["Balban","Qutbuddin Aibak","Ghori","Aram Shah"],answer:1},
+{q:"Iltutmish married whose daughter?",options:["Razia's","Ghori's","Aibak's","Balban's"],answer:2},
+{q:"Iltutmish was appointed governor of?",options:["Delhi","Ajmer","Badayun","Lahore"],answer:2},
+{q:"Who gave Iltutmish the title Sultan-i-Azam?",options:["Balban","Caliph","Razia","Aibak"],answer:1},
+
+{q:"Iltutmish received recognition from Caliph in?",options:["1211","1229","1236","1240"],answer:1},
+{q:"Silver coin introduced by Iltutmish?",options:["Jital","Tanka","Rupiya","Dinar"],answer:1},
+{q:"Copper coin introduced by Iltutmish?",options:["Jital","Tanka","Mohur","Dam"],answer:0},
+{q:"Who is called the real founder of Delhi Sultanate?",options:["Aibak","Iltutmish","Balban","Razia"],answer:1},
+{q:"Which institution was formed by Iltutmish?",options:["Chalisa","Diwan-i-Arz","Barid","Mansabdari"],answer:0},
+
+{q:"Chalisa consisted of?",options:["20 nobles","30 nobles","40 nobles","50 nobles"],answer:2},
+{q:"Who faced the Mongol threat first?",options:["Balban","Iltutmish","Aibak","Razia"],answer:1},
+{q:"Who was the daughter of Iltutmish?",options:["Nur Jahan","Razia","Jahanara","Mumtaz"],answer:1},
+{q:"Razia ruled during?",options:["1236-1240","1240-1246","1266-1287","1290-1296"],answer:0},
+{q:"Razia was the first _____ ruler of India.",options:["Hindu","Muslim","Female Muslim","Rajput"],answer:2},
+
+{q:"Razia appointed whom as Amir-i-Akhur?",options:["Yakut","Balban","Altunia","Aibak"],answer:0},
+{q:"Yakut belonged to?",options:["Turk","Persian","Abyssinian","Arab"],answer:2},
+{q:"Who revolted against Razia?",options:["Altunia","Ghori","Aibak","Mahmud"],answer:0},
+{q:"Razia died in?",options:["1240","1236","1266","1290"],answer:0},
+{q:"After Razia who became Sultan?",options:["Bahram Shah","Balban","Nasiruddin","Aibak"],answer:0},
+
+{q:"Who was called Ulugh Khan?",options:["Balban","Aibak","Iltutmish","Razia"],answer:0},
+{q:"Balban ruled during?",options:["1266-1287","1290-1296","1320-1325","1351-1388"],answer:0},
+{q:"Balban belonged to which dynasty?",options:["Khilji","Slave","Tughlaq","Sayyid"],answer:1},
+{q:"Balban's theory of kingship emphasized?",options:["Democracy","Divine Right","Republic","Federalism"],answer:1},
+{q:"Balban adopted the title?",options:["Zill-i-Ilahi","Sultan-i-Azam","Lakh Baksh","Padshah"],answer:0},
+
+{q:"Meaning of Zill-i-Ilahi?",options:["Shadow of God","Servant of God","King of Kings","Caliph"],answer:0},
+{q:"Which practices were introduced by Balban?",options:["Sijda and Paibos","Jizya and Kharaj","Iqta and Jagir","Tanka and Jital"],answer:0},
+{q:"Balban set up which spy department?",options:["Barid","Diwan-i-Arz","Chalisa","Iqta"],answer:0},
+{q:"Balban's famous son was?",options:["Muhammad","Nasiruddin","Yakut","Altunia"],answer:0},
+{q:"Muhammad died fighting against?",options:["Rajputs","Mongols","Marathas","British"],answer:1},
+
+{q:"Who is called greatest ruler of Khilji Dynasty?",options:["Jalaluddin","Alauddin","Mubarak Shah","Khusrau Shah"],answer:1},
+{q:"Alauddin Khilji ruled during?",options:["1296-1316","1290-1296","1320-1325","1351-1388"],answer:0},
+{q:"Alauddin Khilji was known as?",options:["Lakh Baksh","Sikander-i-Sani","Zill-i-Ilahi","Padshah"],answer:1},
+{q:"Who founded Khilji Dynasty?",options:["Alauddin","Jalaluddin Khilji","Balban","Mubarak"],answer:1},
+{q:"Alauddin Khilji was the first Sultan to expand into?",options:["Punjab","South India","Bengal","Sindh"],answer:1},
+
+
+{q:"Alauddin Khilji captured the throne in?",options:["1290","1296","1303","1316"],answer:1},
+{q:"Alauddin killed whom to become Sultan?",options:["Balban","Jalaluddin Khilji","Mubarak Shah","Ghiyasuddin"],answer:1},
+{q:"Capital city established by Alauddin?",options:["Tughlaqabad","Siri","Firozabad","Agra"],answer:1},
+{q:"Alauddin's famous general?",options:["Yakut","Malik Kafur","Altunia","Khusrau Khan"],answer:1},
+{q:"Who conquered Gujarat for Alauddin?",options:["Malik Kafur","Nusrat Khan and Ulugh Khan","Balban","Yakut"],answer:1},
+
+{q:"Ruler of Gujarat defeated by Alauddin?",options:["Bhima I","Rai Karan","Dahir","Ram Chandra"],answer:1},
+{q:"Which temple was destroyed during Gujarat campaign?",options:["Konark","Somnath","Jagannath","Kashi"],answer:1},
+{q:"Who became Alauddin's queen from Gujarat?",options:["Padmavati","Kamala Devi","Razia","Nur Jahan"],answer:1},
+{q:"Malik Kafur was purchased from Gujarat for?",options:["100 Dinars","500 Dinars","1000 Dinars","5000 Dinars"],answer:2},
+{q:"Malik Kafur was known as?",options:["Hazar Dinari","Amir-ul-Umara","Ulugh Khan","Khan-i-Khanan"],answer:0},
+
+{q:"Ruler of Ranthambore defeated by Alauddin?",options:["Pratap Rudradev","Rana Hammir Dev","Ram Chandra Dev","Rai Karan"],answer:1},
+{q:"Women of Ranthambore performed?",options:["Sati","Jauhar","Purdah","Hijrat"],answer:1},
+{q:"Chittor was ruled by?",options:["Rana Ratan Singh","Ram Chandra","Pratap Rudradev","Dahir"],answer:0},
+{q:"Who defeated Chittor?",options:["Balban","Alauddin Khilji","Iltutmish","Babur"],answer:1},
+{q:"Padmavati is associated with?",options:["Chittor","Delhi","Devagiri","Warangal"],answer:0},
+
+{q:"Source of Padmavati story?",options:["Akbarnama","Padmavat","Tarikh-i-Firozshahi","Tabaqat"],answer:1},
+{q:"Author of Padmavat?",options:["Amir Khusrau","Malik Muhammad Jayasi","Barani","Ibn Battuta"],answer:1},
+{q:"After capturing Chittor, Alauddin renamed it?",options:["Khizrabad","Siri","Firozabad","Tughlaqabad"],answer:0},
+{q:"Devagiri belonged to which dynasty?",options:["Kakatiya","Yadava","Pala","Chola"],answer:1},
+{q:"Ruler of Devagiri during Alauddin's invasion?",options:["Ram Chandra Dev","Ratan Singh","Rudradev","Bhima"],answer:0},
+
+{q:"Warangal belonged to which dynasty?",options:["Yadava","Kakatiya","Chola","Pala"],answer:1},
+{q:"Ruler of Warangal defeated by Malik Kafur?",options:["Rudradev II","Dahir","Rai Karan","Ratan Singh"],answer:0},
+{q:"Kohinoor Diamond was obtained from?",options:["Gujarat","Delhi","Warangal","Madurai"],answer:2},
+{q:"Malik Kafur defeated which southern kingdom?",options:["Madurai","Warangal","Devagiri","All of these"],answer:3},
+{q:"Which temple was destroyed in Madurai campaign?",options:["Somnath","Nataraja","Jagannath","Kashi"],answer:1},
+
+{q:"Alauddin established which intelligence department?",options:["Barid","Chalisa","Mansabdari","Iqta"],answer:0},
+{q:"Secret spy organization founded by Alauddin?",options:["Chalisa","Majlis-i-Khas","Barid","Mongol Board"],answer:2},
+{q:"Main purpose of intelligence system?",options:["Collect taxes","Prevent revolts","Trade","Religion"],answer:1},
+{q:"Alauddin banned?",options:["Alcohol","Noble marriages","Feasts without permission","All of these"],answer:3},
+{q:"Alauddin's market control policy was called?",options:["Dagh","Mandi System","Iqta","Kharaj"],answer:1},
+
+{q:"Market control helped mainly in?",options:["Trade","Maintaining army","Religion","Architecture"],answer:1},
+{q:"Horse branding system was called?",options:["Huliya","Dagh","Iqta","Barid"],answer:1},
+{q:"Identification of soldiers system?",options:["Huliya","Dagh","Sijda","Paibos"],answer:0},
+{q:"Largest standing army maintained by?",options:["Balban","Alauddin","Razia","Aibak"],answer:1},
+{q:"Maximum Mongol attacks occurred during whose reign?",options:["Balban","Alauddin","Iltutmish","Firoz"],answer:1},
+
+{q:"How many major Mongol attacks occurred during Alauddin's reign?",options:["3","5","7","10"],answer:2},
+{q:"Alauddin separated religion from?",options:["Army","Administration","Trade","Taxation"],answer:1},
+{q:"Who said 'Kingship knows no kinship'?",options:["Balban","Alauddin","Iltutmish","Babur"],answer:1},
+{q:"Court poet of Alauddin?",options:["Barani","Amir Khusrau","Firdausi","Jayasi"],answer:1},
+{q:"Amir Khusrau was disciple of?",options:["Nizamuddin Auliya","Moinuddin Chishti","Bakhtiyar Kaki","Salim Chishti"],answer:0},
+
+{q:"Amir Khusrau was called?",options:["Parrot of India","Akbar of India","Sultan of Poets","Prince of Builders"],answer:0},
+{q:"Amir Khusrau introduced?",options:["Tabla","Sitar","Qawwali","All of these"],answer:3},
+{q:"Alauddin constructed which gateway?",options:["Buland Darwaza","Alai Darwaza","India Gate","Lahori Gate"],answer:1},
+{q:"Alauddin started construction of?",options:["Alai Minar","Qutb Minar","Charminar","Gol Gumbaz"],answer:0},
+{q:"Who succeeded Alauddin Khilji?",options:["Mubarak Shah","Balban","Ghiyasuddin","Nasiruddin"],answer:0},
+
+{q:"Last ruler of Khilji dynasty?",options:["Alauddin","Mubarak Shah","Khusrau Shah","Jalaluddin"],answer:2},
+{q:"Who ended the Khilji dynasty?",options:["Babur","Ghiyasuddin Tughlaq","Balban","Iltutmish"],answer:1},
+{q:"Founder of Tughlaq dynasty?",options:["Muhammad bin Tughlaq","Ghiyasuddin Tughlaq","Firoz Shah","Nasiruddin"],answer:1},
+{q:"Tughlaq dynasty was established in?",options:["1290","1320","1351","1414"],answer:1},
+{q:"Ghiyasuddin Tughlaq founded which city?",options:["Siri","Tughlaqabad","Agra","Firozabad"],answer:1},
+// MCQ SET 3 (101–150) : Tughlaq Dynasty, Muhammad Bin Tughlaq, Firoz Shah Tughlaq
+
+{q:"Muhammad Bin Tughlaq ruled during?",options:["1320-1325","1325-1351","1351-1388","1414-1451"],answer:1},
+{q:"Muhammad Bin Tughlaq was the son of?",options:["Balban","Ghiyasuddin Tughlaq","Firoz Shah","Alauddin"],answer:1},
+{q:"Real name of Muhammad Bin Tughlaq?",options:["Junakhan","Khizr Khan","Ulugh Khan","Nasir Khan"],answer:0},
+{q:"Muhammad Bin Tughlaq was called?",options:["Wise King","Mad King","Parrot of India","Lakh Baksh"],answer:1},
+{q:"Another title of Muhammad Bin Tughlaq?",options:["Prince of Moneyers","Sultan-i-Azam","Zill-i-Ilahi","Sikander-i-Sani"],answer:0},
+
+{q:"Muhammad Bin Tughlaq shifted capital from Delhi to?",options:["Warangal","Daulatabad","Agra","Lahore"],answer:1},
+{q:"Earlier name of Daulatabad was?",options:["Devagiri","Siri","Tughlaqabad","Khizrabad"],answer:0},
+{q:"Capital transfer took place mainly to?",options:["Control South India","Trade","Religion","Agriculture"],answer:0},
+{q:"After how many years was capital shifted back to Delhi?",options:["1","2","5","10"],answer:1},
+{q:"Capital transfer caused?",options:["Prosperity","Heavy loss of life","Victory over Mongols","Revenue increase"],answer:1},
+
+{q:"Muhammad Bin Tughlaq introduced?",options:["Token Currency","Iqta","Mansabdari","Dagh"],answer:0},
+{q:"Token currency was made of?",options:["Gold","Silver","Copper","Iron"],answer:2},
+{q:"Token currency was inspired by ruler of?",options:["China","Persia","Arabia","Turkey"],answer:0},
+{q:"Chinese ruler who inspired token currency?",options:["Kublai Khan","Genghis Khan","Timur","Ogedei"],answer:0},
+{q:"Result of token currency experiment?",options:["Success","Failure","Partial Success","Unknown"],answer:1},
+
+{q:"Muhammad Bin Tughlaq increased revenue in?",options:["Punjab","Doab","Bengal","Sindh"],answer:1},
+{q:"Increase in Doab revenue coincided with?",options:["Flood","Drought","War","Prosperity"],answer:1},
+{q:"Department of Agriculture founded by him?",options:["Diwan-i-Arz","Diwan-i-Kohi","Barid","Chalisa"],answer:1},
+{q:"Head of Diwan-i-Kohi?",options:["Amir Kohi","Malik Kafur","Yakut","Barani"],answer:0},
+{q:"Diwan-i-Kohi provided?",options:["Loans to farmers","Military training","Religious education","Trade permits"],answer:0},
+
+{q:"Loan for Rabi crops was called?",options:["Takavi","Sondhar","Kharaj","Jizya"],answer:1},
+{q:"Loan for Kharif crops was called?",options:["Takavi","Sondhar","Tanka","Iqta"],answer:0},
+{q:"Muhammad Bin Tughlaq adopted which policy against Mongols?",options:["War","Appeasement","Alliance","None"],answer:1},
+{q:"Which foreign traveler visited his court?",options:["Al-Biruni","Ibn Battuta","Marco Polo","Fa-Hien"],answer:1},
+{q:"Ibn Battuta belonged to?",options:["Morocco","China","Persia","Turkey"],answer:0},
+
+{q:"Muhammad Bin Tughlaq gave Ibn Battuta the title?",options:["Qazi","Amir","Khan","Wazir"],answer:0},
+{q:"Book written by Ibn Battuta?",options:["Rihla","Akbarnama","Baburnama","Tarikh"],answer:0},
+{q:"Khorasan expedition of Muhammad Bin Tughlaq was?",options:["Successful","Failed","Partially successful","Not attempted"],answer:1},
+{q:"Karakhal expedition resulted in?",options:["Victory","Heavy loss","Alliance","Trade"],answer:1},
+{q:"Muhammad Bin Tughlaq died in?",options:["1351","1325","1388","1414"],answer:0},
+
+{q:"During Muhammad Bin Tughlaq's reign which kingdoms emerged?",options:["Vijayanagar & Bahmani","Mughal & Maratha","Gupta & Vakataka","Chola & Chera"],answer:0},
+{q:"Vijayanagar Empire was founded in?",options:["1336","1347","1351","1398"],answer:0},
+{q:"Founders of Vijayanagar?",options:["Harihara and Bukka","Krishna Deva Raya","Sangama","Rama Raya"],answer:0},
+{q:"Bahmani Kingdom was founded in?",options:["1336","1347","1398","1451"],answer:1},
+{q:"Founder of Bahmani Kingdom?",options:["Alauddin Hasan Bahman Shah","Harihara","Bukka","Timur"],answer:0},
+
+{q:"Firoz Shah Tughlaq ruled during?",options:["1351-1388","1325-1351","1414-1451","1451-1526"],answer:0},
+{q:"Firoz Shah Tughlaq was related to Muhammad Bin Tughlaq as?",options:["Brother","Cousin","Father","Son"],answer:1},
+{q:"Firoz Shah is called?",options:["Akbar of Delhi Sultanate","Mad King","Parrot of India","Lakh Baksh"],answer:0},
+{q:"Firoz Shah established?",options:["Public Works Department","Mansabdari","Iqta","Chalisa"],answer:0},
+{q:"Hospital department founded by Firoz Shah?",options:["Diwan-i-Khairat","Dar-ul-Shafa","Barid","Diwan-i-Arz"],answer:1},
+
+{q:"Charitable department founded by Firoz Shah?",options:["Diwan-i-Khairat","Dar-ul-Shafa","Barid","Kohi"],answer:0},
+{q:"Department for slaves founded by Firoz Shah?",options:["Diwan-i-Bandagan","Chalisa","Barid","Iqta"],answer:0},
+{q:"Firoz Shah abolished how many taxes?",options:["18","20","24","28"],answer:3},
+{q:"Land revenue tax was called?",options:["Kharaj","Jizya","Khams","Zakat"],answer:0},
+{q:"War booty tax was called?",options:["Khams","Kharaj","Jizya","Zakat"],answer:0},
+
+{q:"Tax paid by Muslims was?",options:["Jizya","Zakat","Kharaj","Khams"],answer:1},
+{q:"Religious tax on non-Muslims?",options:["Jizya","Khams","Zakat","Kharaj"],answer:0},
+{q:"Irrigation tax introduced by Firoz Shah?",options:["Haq-i-Sharb","Khams","Kharaj","Jizya"],answer:0},
+{q:"Maximum irrigation development occurred under?",options:["Alauddin","Firoz Shah","Balban","Aibak"],answer:1},
+{q:"Coin introduced by Firoz Shah?",options:["Adha and Bikh","Tanka and Jital","Dam and Rupiya","Mohur and Dam"],answer:0},
+// MCQ SET 4 (151–200) : Timur, Sayyid, Lodhi Dynasty, Panipat
+
+{q:"Who invaded India in 1398?",options:["Babur","Timur","Nadir Shah","Ghori"],answer:1},
+{q:"Timur belonged to?",options:["Persia","Samarkand","Turkey","Arabia"],answer:1},
+{q:"Timur attacked Delhi during reign of?",options:["Firoz Shah","Nasiruddin Mahmud Shah","Ibrahim Lodhi","Khizr Khan"],answer:1},
+{q:"Timur stayed in Delhi for?",options:["7 days","14 days","21 days","40 days"],answer:1},
+{q:"Timur's invasion weakened?",options:["Mughals","Delhi Sultanate","Marathas","Guptas"],answer:1},
+
+{q:"Before leaving India Timur appointed whom as governor?",options:["Khizr Khan","Bahlol Lodhi","Daulat Khan","Alam Shah"],answer:0},
+{q:"Khizr Khan was governor of?",options:["Delhi","Punjab, Multan & Dipalpur","Bengal","Sindh"],answer:1},
+{q:"Last ruler of Tughlaq dynasty?",options:["Firoz Shah","Nasiruddin Mahmud Shah","Muhammad Bin Tughlaq","Ghiyasuddin"],answer:1},
+{q:"Tughlaq dynasty ended in?",options:["1398","1414","1451","1526"],answer:1},
+{q:"Who founded the Sayyid Dynasty?",options:["Khizr Khan","Mubarak Shah","Alam Shah","Bahlol Lodhi"],answer:0},
+
+{q:"Sayyid Dynasty ruled from?",options:["1320-1414","1414-1451","1451-1526","1206-1290"],answer:1},
+{q:"Founder of Sayyid Dynasty was?",options:["Khizr Khan","Mubarak Shah","Alam Shah","Ibrahim"],answer:0},
+{q:"First ruler of Sayyid Dynasty?",options:["Khizr Khan","Mubarak Shah","Muhammad Shah","Alam Shah"],answer:0},
+{q:"Last ruler of Sayyid Dynasty?",options:["Khizr Khan","Muhammad Shah","Alam Shah","Mubarak Shah"],answer:2},
+{q:"Alam Shah was murdered by?",options:["Babur","Bahlol Lodhi","Timur","Khizr Khan"],answer:1},
+
+{q:"Who founded Lodhi Dynasty?",options:["Sikandar Lodhi","Ibrahim Lodhi","Bahlol Lodhi","Daulat Khan"],answer:2},
+{q:"Lodhi Dynasty ruled from?",options:["1414-1451","1451-1526","1526-1556","1206-1290"],answer:1},
+{q:"Lodhi Dynasty was the first _____ dynasty in India.",options:["Turkish","Arab","Afghan","Persian"],answer:2},
+{q:"Bahlol Lodhi introduced which coin?",options:["Tanka","Jital","Bahloli","Dam"],answer:2},
+{q:"Bahlol Lodhi became Sultan in?",options:["1414","1451","1489","1526"],answer:1},
+
+{q:"Greatest ruler of Lodhi Dynasty?",options:["Bahlol Lodhi","Sikandar Lodhi","Ibrahim Lodhi","Daulat Khan"],answer:1},
+{q:"Real name of Sikandar Lodhi?",options:["Nizam Khan","Ibrahim Khan","Khizr Khan","Daulat Khan"],answer:0},
+{q:"Sikandar Lodhi ruled during?",options:["1451-1489","1489-1517","1517-1526","1414-1451"],answer:1},
+{q:"Pen name of Sikandar Lodhi?",options:["Gulrukhi","Jayasi","Khusrau","Barani"],answer:0},
+{q:"Meaning of Gulrukhi?",options:["Rose-faced","Brave King","Shadow of God","Lion King"],answer:0},
+
+{q:"Sikandar Lodhi founded which city?",options:["Delhi","Agra","Lahore","Jaunpur"],answer:1},
+{q:"Agra was founded in?",options:["1451","1489","1504","1526"],answer:2},
+{q:"Sikandar Lodhi made _____ his capital.",options:["Delhi","Agra","Lahore","Ajmer"],answer:1},
+{q:"Land measurement unit introduced by Sikandar?",options:["Gaz-i-Sikandari","Bigha","Jarib","Tanka"],answer:0},
+{q:"Famous saint contemporary of Sikandar Lodhi?",options:["Nizamuddin Auliya","Kabir","Moinuddin Chishti","Bakhtiyar Kaki"],answer:1},
+
+{q:"Who succeeded Sikandar Lodhi?",options:["Bahlol Lodhi","Ibrahim Lodhi","Daulat Khan","Babur"],answer:1},
+{q:"Ibrahim Lodhi ruled during?",options:["1451-1489","1489-1517","1517-1526","1526-1530"],answer:2},
+{q:"Last ruler of Delhi Sultanate?",options:["Alam Shah","Ibrahim Lodhi","Sikandar Lodhi","Bahlol Lodhi"],answer:1},
+{q:"Who defeated Ibrahim Lodhi?",options:["Timur","Babur","Sher Shah","Humayun"],answer:1},
+{q:"Battle in which Ibrahim Lodhi died?",options:["Tarain","Panipat","Khanwa","Haldighati"],answer:1},
+
+{q:"First Battle of Panipat fought in?",options:["1525","1526","1527","1530"],answer:1},
+{q:"Opponent of Babur at Panipat?",options:["Sikandar Lodhi","Ibrahim Lodhi","Daulat Khan","Alam Shah"],answer:1},
+{q:"Result of First Battle of Panipat?",options:["Lodhi Victory","Babur Victory","Draw","Timur Victory"],answer:1},
+{q:"Which empire was established after Panipat?",options:["Delhi Sultanate","Mughal Empire","Maratha Empire","Bahmani Empire"],answer:1},
+{q:"Which dynasty ended after Panipat?",options:["Khilji","Tughlaq","Lodhi","Sayyid"],answer:2},
+
+{q:"Who is considered the last Sultan of Delhi Sultanate?",options:["Sikandar Lodhi","Ibrahim Lodhi","Alam Shah","Bahlol Lodhi"],answer:1},
+{q:"Delhi Sultanate existed from?",options:["1206-1526","1192-1526","1211-1526","1206-1556"],answer:0},
+{q:"Total number of dynasties in Delhi Sultanate?",options:["3","4","5","6"],answer:2},
+{q:"Correct order of dynasties?",options:["Slave-Khilji-Tughlaq-Sayyid-Lodhi","Slave-Tughlaq-Khilji-Sayyid-Lodhi","Khilji-Slave-Tughlaq-Lodhi-Sayyid","Slave-Khilji-Lodhi-Tughlaq-Sayyid"],answer:0},
+{q:"Which dynasty ruled longest?",options:["Slave","Khilji","Tughlaq","Lodhi"],answer:2},
+
+{q:"Who built Tughlaqabad?",options:["Muhammad Bin Tughlaq","Ghiyasuddin Tughlaq","Firoz Shah","Alauddin"],answer:1},
+{q:"Who built Siri city?",options:["Balban","Alauddin Khilji","Firoz Shah","Aibak"],answer:1},
+{q:"Who built Agra?",options:["Babur","Sikandar Lodhi","Ibrahim Lodhi","Sher Shah"],answer:1},
+{q:"Who introduced Dagh system?",options:["Balban","Alauddin Khilji","Firoz Shah","Aibak"],answer:1},
+{q:"Who introduced Huliya system?",options:["Balban","Alauddin Khilji","Iltutmish","Firoz Shah"],answer:1},
+
+{q:"Who introduced Token Currency?",options:["Alauddin","Muhammad Bin Tughlaq","Firoz Shah","Balban"],answer:1},
+{q:"Who transferred capital to Daulatabad?",options:["Muhammad Bin Tughlaq","Alauddin","Balban","Iltutmish"],answer:0},
+{q:"Who started maximum irrigation works?",options:["Balban","Firoz Shah","Alauddin","Aibak"],answer:1},
+{q:"Who established Diwan-i-Bandagan?",options:["Balban","Firoz Shah","Muhammad Bin Tughlaq","Aibak"],answer:1},
+{q:"Who established Dar-ul-Shafa?",options:["Balban","Alauddin","Firoz Shah","Iltutmish"],answer:2}
+
+]}];
 let activeChapter = null;
 let selectedTopics = new Set();
 let quizQuestions = [];
